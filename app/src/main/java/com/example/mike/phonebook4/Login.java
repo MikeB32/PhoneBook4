@@ -82,5 +82,11 @@ public class Login extends AppCompatActivity {
         // Close The Database
         db.closeDB2();
     }
+    
+     @Override
+    public void onBackPressed() {
+        this.finishAffinity();
+        super.onBackPressed();
+    }
 }
 
